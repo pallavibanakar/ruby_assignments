@@ -1,26 +1,26 @@
-begin
-module Calculate
-  def percentage(marks_scored,total_marks)
-     percent=(marks_scored/total_marks)*100;
-     return percent
+
+  module Calculate
+    def percentage(marks_scored,total_marks)
+      percent=(marks_scored/total_marks)*100;
+      return percent
+    end
+    def simple_interests(principal,time,rate)
+      simple_interest=(principal*time*rate)/100;
+      return simple_interest
+    end
   end
-  def simple_interests(principal,time,rate)
-     simple_interest=(principal*time*rate)/100;
-     return simple_interest
+
+
+  class Score 
+  include Calculate
+
+
   end
-end
 
+  class Interest 
+  include Calculate
 
-class Score 
-include Calculate
-
-
-end
-
-class Interest 
-include Calculate
-
-end 
+  end
   
   
 
@@ -42,4 +42,4 @@ end
   simple_interest=calculate_interest.simple_interests(principal,time,rate)
   puts "simple_interest is:"
   puts simple_interest
-end
+

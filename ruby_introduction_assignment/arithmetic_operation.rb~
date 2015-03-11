@@ -1,4 +1,4 @@
-begin
+
 
    def arithmetic_operation(first_number,second_number,operator)
       first_number.send(operator,second_number)	
@@ -16,5 +16,4 @@ begin
    puts "result:"
    puts result
        
-end
 
