@@ -60,8 +60,7 @@ def kt_recursive(x_current,y_current,move_count,solution,x_Move,y_Move)
   return false
 end
 
-begin
-  knight_solution()
-end
+
+  knight_solution
 
 
