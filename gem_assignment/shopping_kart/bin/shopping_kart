@@ -1,0 +1,3 @@
+require 'shopping_kart'
+
+puts "welcome"
